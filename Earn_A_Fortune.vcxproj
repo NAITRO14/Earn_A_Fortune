@@ -101,22 +101,24 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="core\mainWindow.cpp" />
     <ClCompile Include="Main.cpp" />
-    <ClCompile Include="mainWindow.cpp" />
-    <ClCompile Include="places.cpp" />
-    <ClCompile Include="startHouse.cpp" />
-    <ClCompile Include="stHouse_room1.cpp" />
-    <ClCompile Include="stHouse_room2.cpp" />
-    <ClCompile Include="stHouse_room2_near_the_table.cpp" />
+    <ClCompile Include="places\places.cpp" />
+    <ClCompile Include="places\startHouse\rooms\stHouse_room1.cpp" />
+    <ClCompile Include="places\startHouse\rooms\stHouse_room2.cpp" />
+    <ClCompile Include="places\startHouse\rooms\stHouse_room2_near_the_table.cpp" />
+    <ClCompile Include="places\startHouse\startHouse.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <QtMoc Include="stHouse_room2_near_the_table.h" />
-    <QtMoc Include="stHouse_room2.h" />
-    <QtMoc Include="stHouse_room1.h" />
-    <QtMoc Include="startHouse.h" />
-    <QtMoc Include="mainWindow.h" />
-    <QtMoc Include="places.h" />
-    <ClInclude Include="QtIncludes.h" />
+    <QtMoc Include="core\mainWindow.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="core\QtIncludes.h" />
+    <QtMoc Include="places\places.h" />
+    <QtMoc Include="places\startHouse\rooms\stHouse_room2_near_the_table.h" />
+    <QtMoc Include="places\startHouse\rooms\stHouse_room2.h" />
+    <QtMoc Include="places\startHouse\rooms\stHouse_room1.h" />
+    <QtMoc Include="places\startHouse\startHouse.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">

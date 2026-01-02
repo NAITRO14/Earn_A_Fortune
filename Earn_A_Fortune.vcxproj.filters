@@ -5,73 +5,72 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>qml;cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
-    </Filter>
     <Filter Include="Resource Files">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>qrc;rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="places">
-      <UniqueIdentifier>{311810b1-672f-4db0-8e4f-a4e1049a8d34}</UniqueIdentifier>
+    <Filter Include="Source Files\CPP">
+      <UniqueIdentifier>{bd5472ff-5dce-4062-a4f6-22867e80b9a4}</UniqueIdentifier>
     </Filter>
-    <Filter Include="core">
-      <UniqueIdentifier>{177a92c5-ab10-4d5c-8203-e34d9fde2c6e}</UniqueIdentifier>
+    <Filter Include="Source Files\HEADER">
+      <UniqueIdentifier>{34456a0e-dff9-4531-babf-9b68a1e92f33}</UniqueIdentifier>
     </Filter>
-    <Filter Include="places\startHouse">
-      <UniqueIdentifier>{0003bbfd-4fd2-4f2a-a1f6-17bf64571be5}</UniqueIdentifier>
+    <Filter Include="Places">
+      <UniqueIdentifier>{c5c76d11-2e41-4785-8177-1fb213afc31f}</UniqueIdentifier>
     </Filter>
-    <Filter Include="places\startHouse\rooms">
-      <UniqueIdentifier>{e4126104-50ad-452d-b371-ff9fc98677da}</UniqueIdentifier>
+    <Filter Include="Places\startHouse">
+      <UniqueIdentifier>{c4be3128-0e95-4334-8af1-1e67669cb7ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Places\startHouse\rooms">
+      <UniqueIdentifier>{12ea6c60-a394-4d39-9082-98ae00a20592}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="core\mainWindow.cpp">
+      <Filter>Source Files\CPP</Filter>
+    </ClCompile>
     <ClCompile Include="Main.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\CPP</Filter>
     </ClCompile>
-    <ClCompile Include="places.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="places\startHouse\startHouse.cpp">
+      <Filter>Places\startHouse</Filter>
     </ClCompile>
-    <ClCompile Include="mainWindow.cpp">
-      <Filter>core</Filter>
+    <ClCompile Include="places\startHouse\rooms\stHouse_room1.cpp">
+      <Filter>Places\startHouse\rooms</Filter>
     </ClCompile>
-    <ClCompile Include="stHouse_room1.cpp">
-      <Filter>places\startHouse\rooms</Filter>
+    <ClCompile Include="places\startHouse\rooms\stHouse_room2.cpp">
+      <Filter>Places\startHouse\rooms</Filter>
     </ClCompile>
-    <ClCompile Include="stHouse_room2.cpp">
-      <Filter>places\startHouse\rooms</Filter>
+    <ClCompile Include="places\startHouse\rooms\stHouse_room2_near_the_table.cpp">
+      <Filter>Places\startHouse\rooms</Filter>
     </ClCompile>
-    <ClCompile Include="startHouse.cpp">
-      <Filter>places\startHouse</Filter>
-    </ClCompile>
-    <ClCompile Include="stHouse_room2_near_the_table.cpp">
-      <Filter>places\startHouse\rooms</Filter>
+    <ClCompile Include="places\places.cpp">
+      <Filter>Places</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <QtMoc Include="places.h">
-      <Filter>Header Files</Filter>
-    </QtMoc>
-    <QtMoc Include="mainWindow.h">
-      <Filter>core</Filter>
-    </QtMoc>
-    <QtMoc Include="stHouse_room1.h">
-      <Filter>places\startHouse\rooms</Filter>
-    </QtMoc>
-    <QtMoc Include="stHouse_room2.h">
-      <Filter>places\startHouse\rooms</Filter>
-    </QtMoc>
-    <QtMoc Include="startHouse.h">
-      <Filter>places\startHouse</Filter>
-    </QtMoc>
-    <QtMoc Include="stHouse_room2_near_the_table.h">
-      <Filter>places\startHouse\rooms</Filter>
-    </QtMoc>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="QtIncludes.h">
-      <Filter>core</Filter>
+    <ClInclude Include="core\QtIncludes.h">
+      <Filter>Source Files\HEADER</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="core\mainWindow.h">
+      <Filter>Source Files\HEADER</Filter>
+    </QtMoc>
+    <QtMoc Include="places\startHouse\startHouse.h">
+      <Filter>Places\startHouse</Filter>
+    </QtMoc>
+    <QtMoc Include="places\startHouse\rooms\stHouse_room1.h">
+      <Filter>Places\startHouse\rooms</Filter>
+    </QtMoc>
+    <QtMoc Include="places\startHouse\rooms\stHouse_room2.h">
+      <Filter>Places\startHouse\rooms</Filter>
+    </QtMoc>
+    <QtMoc Include="places\startHouse\rooms\stHouse_room2_near_the_table.h">
+      <Filter>Places\startHouse\rooms</Filter>
+    </QtMoc>
+    <QtMoc Include="places\places.h">
+      <Filter>Places</Filter>
+    </QtMoc>
   </ItemGroup>
 </Project>

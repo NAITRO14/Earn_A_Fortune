@@ -1,5 +1,4 @@
-#include "places.h"
-#include"startHouse.h"
+#include "places/places.h"
 
 places::places(QWidget* parent) : QWidget(parent)
 {

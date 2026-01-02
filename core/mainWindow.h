@@ -1,8 +1,6 @@
 #pragma once
-#include "QtIncludes.h"
-#include "places.h"
-
-
+#include "core/QtIncludes.h"
+#include "places/places.h"
 
 class mainWindow : public QWidget
 {

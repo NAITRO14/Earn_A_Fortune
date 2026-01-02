@@ -1,5 +1,7 @@
 #pragma once
-#include "QtIncludes.h"
+#include "core/QtIncludes.h"
+#include"places/startHouse/startHouse.h"
+
 class places : public QWidget
 {
 	Q_OBJECT

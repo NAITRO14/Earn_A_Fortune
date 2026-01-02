@@ -1,5 +1,5 @@
 ﻿#pragma once
-#include "QtIncludes.h"
+#include "core/QtIncludes.h"
 
 class stHouse_room1 : public QWidget
 {

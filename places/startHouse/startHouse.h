@@ -1,8 +1,8 @@
 ﻿#pragma once
-#include "QtIncludes.h"
-#include "stHouse_room1.h"
-#include "stHouse_room2.h"
-#include "stHouse_room2_near_the_table.h"
+#include "core/QtIncludes.h"
+#include "places/startHouse/rooms/stHouse_room1.h"
+#include "places/startHouse/rooms/stHouse_room2.h"
+#include "places/startHouse/rooms/stHouse_room2_near_the_table.h"
 
 class startHouse : public QWidget
 {
