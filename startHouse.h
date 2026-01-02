@@ -2,6 +2,7 @@
 #include "QtIncludes.h"
 #include "stHouse_room1.h"
 #include "stHouse_room2.h"
+#include "stHouse_room2_near_the_table.h"
 
 class startHouse : public QWidget
 {
@@ -20,8 +21,14 @@ private:
 		new QPushButton(this),
 	};
 
+	QVector<QPushButton*> secondRoomNearTableBtns = {
+		new QPushButton(this),
+	};
+
 	void fromSecondToFirstRoom();
 	void fromFirstToSecondRoom();
+	void toTableInSndRoom();
+	void outTableInSndRoom();
 
 	void configureBtns();
 };

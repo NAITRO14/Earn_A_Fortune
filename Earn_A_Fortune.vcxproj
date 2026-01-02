@@ -107,8 +107,10 @@
     <ClCompile Include="startHouse.cpp" />
     <ClCompile Include="stHouse_room1.cpp" />
     <ClCompile Include="stHouse_room2.cpp" />
+    <ClCompile Include="stHouse_room2_near_the_table.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <QtMoc Include="stHouse_room2_near_the_table.h" />
     <QtMoc Include="stHouse_room2.h" />
     <QtMoc Include="stHouse_room1.h" />
     <QtMoc Include="startHouse.h" />

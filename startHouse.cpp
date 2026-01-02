@@ -7,10 +7,12 @@ startHouse::startHouse(QWidget* parent) : QWidget(parent)
 	//КОМНАТЫ
 	auto* first_room = new stHouse_room1(rooms);
 	auto* second_room = new stHouse_room2(rooms);
+	auto* nearTheTable = new stHouse_room2_near_the_table(rooms);
 
 	//НАТСРЙОКА
 	rooms->addWidget(first_room);
 	rooms->addWidget(second_room);
+	rooms->addWidget(nearTheTable);
 
 	QVBoxLayout* layout = new QVBoxLayout(this);
 	layout->addWidget(rooms);
@@ -49,6 +51,33 @@ void startHouse::fromFirstToSecondRoom()
 	}
 }
 
+void startHouse::toTableInSndRoom()
+{
+	rooms->setCurrentIndex(2);
+	for (auto& btn : secondRoomBtns)
+	{
+		btn->hide();
+	}
+	for (auto& btn : secondRoomNearTableBtns)
+	{
+		btn->show();
+	}
+
+}
+
+void startHouse::outTableInSndRoom()
+{
+	rooms->setCurrentIndex(1);
+	for (auto& btn : secondRoomBtns)
+	{
+		btn->show();
+	}
+	for (auto& btn : secondRoomNearTableBtns)
+	{
+		btn->hide();
+	}
+}
+
 void startHouse::configureBtns()
 {
 	//СОЗДАТЬ И ПОДКЛЮЧИТЬ
@@ -61,11 +90,15 @@ void startHouse::configureBtns()
 	secondRoomBtns[0]->setGeometry(192, 537, 416, 63);
 	secondRoomBtns[0]->hide();
 
-	/*secondRoomBtns[1] = new QPushButton(this);
-	connect(secondRoomBtns[1], &QPushButton::clicked, this, &startHouse::fromSecondToFirstRoom);
-	secondRoomBtns[1]->setGeometry(192, 537, 416, 63);
-	secondRoomBtns[1]->setStyleSheet("QPushButton{background-color: green}");
-	secondRoomBtns[1]->hide();*/
+	secondRoomBtns[1] = new QPushButton(this);
+	connect(secondRoomBtns[1], &QPushButton::clicked, this, &startHouse::toTableInSndRoom);
+	secondRoomBtns[1]->setGeometry(550, 184, 193, 45);
+
+	secondRoomBtns[1]->hide();
+	secondRoomNearTableBtns[0] = new QPushButton(this);
+	connect(secondRoomNearTableBtns[0], &QPushButton::clicked, this, &startHouse::outTableInSndRoom);
+	secondRoomNearTableBtns[0]->setGeometry(192, 537, 416, 63);
+	secondRoomNearTableBtns[0]->hide();
 
 
 
