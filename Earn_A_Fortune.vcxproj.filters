@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>qml;cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>qrc;rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="rooms">
+      <UniqueIdentifier>{e4126104-50ad-452d-b371-ff9fc98677da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="places">
+      <UniqueIdentifier>{311810b1-672f-4db0-8e4f-a4e1049a8d34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core">
+      <UniqueIdentifier>{177a92c5-ab10-4d5c-8203-e34d9fde2c6e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="places.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="startHouse.cpp">
+      <Filter>places</Filter>
+    </ClCompile>
+    <ClCompile Include="mainWindow.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="stHouse_room1.cpp">
+      <Filter>rooms</Filter>
+    </ClCompile>
+    <ClCompile Include="stHouse_room2.cpp">
+      <Filter>rooms</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="places.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="startHouse.h">
+      <Filter>places</Filter>
+    </QtMoc>
+    <QtMoc Include="mainWindow.h">
+      <Filter>core</Filter>
+    </QtMoc>
+    <QtMoc Include="stHouse_room1.h">
+      <Filter>rooms</Filter>
+    </QtMoc>
+    <QtMoc Include="stHouse_room2.h">
+      <Filter>rooms</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="QtIncludes.h">
+      <Filter>core</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
