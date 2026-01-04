@@ -105,8 +105,8 @@
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="PhoneUI.cpp" />
     <ClCompile Include="places\places.cpp" />
-    <ClCompile Include="places\startHouse\rooms\stHouse_room1.cpp" />
-    <ClCompile Include="places\startHouse\rooms\stHouse_room2.cpp" />
+    <ClCompile Include="places\startHouse\rooms\hallway.cpp" />
+    <ClCompile Include="places\startHouse\rooms\bedroom.cpp" />
     <ClCompile Include="places\startHouse\rooms\stHouse_room2_near_the_table.cpp" />
     <ClCompile Include="places\startHouse\startHouse.cpp" />
   </ItemGroup>
@@ -118,8 +118,8 @@
     <QtMoc Include="PhoneUI.h" />
     <QtMoc Include="places\places.h" />
     <QtMoc Include="places\startHouse\rooms\stHouse_room2_near_the_table.h" />
-    <QtMoc Include="places\startHouse\rooms\stHouse_room2.h" />
-    <QtMoc Include="places\startHouse\rooms\stHouse_room1.h" />
+    <QtMoc Include="places\startHouse\rooms\bedroom.h" />
+    <QtMoc Include="places\startHouse\rooms\hallway.h" />
     <QtMoc Include="places\startHouse\startHouse.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

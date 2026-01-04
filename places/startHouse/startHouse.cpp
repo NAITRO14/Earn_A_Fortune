@@ -5,23 +5,20 @@ startHouse::startHouse(QWidget* parent) : QWidget(parent)
 	rooms = new QStackedWidget(this);
 
 	//КОМНАТЫ
-	auto* first_room = new stHouse_room1(rooms);
-	auto* second_room = new stHouse_room2(rooms);
-	auto* nearTheTable = new stHouse_room2_near_the_table(rooms);
+
+	auto* hallwayPtr = new hallway(rooms);
+	auto* bedroomPrt = new bedroom(rooms);
 
 	//НАТСРЙОКА
-	rooms->addWidget(first_room);
-	rooms->addWidget(second_room);
-	rooms->addWidget(nearTheTable);
+	rooms->addWidget(hallwayPtr);
+	rooms->addWidget(bedroomPrt);
 
 	QVBoxLayout* layout = new QVBoxLayout(this);
 	layout->addWidget(rooms);
 	layout->setContentsMargins(0, 0, 0, 0);
 	setLayout(layout);
 
-	configureBtns();
-
-
+	//configureBtns();
 }
 
 void startHouse::fromSecondToFirstRoom()

@@ -1,4 +1,4 @@
-#include "mainWindow.h"
+﻿#include "mainWindow.h"
 
 mainWindow::mainWindow(QWidget* parent) : QWidget(parent)
 {
@@ -13,7 +13,7 @@ mainWindow::mainWindow(QWidget* parent) : QWidget(parent)
 
 	mainLayout->setContentsMargins(0, 0, 0, 0);
 	setLayout(mainLayout);
-	setMinimumSize(200, 300);
+	setMinimumSize(1600, 900);
 	
 	
 }
