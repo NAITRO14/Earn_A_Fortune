@@ -27,14 +27,15 @@ hallway::hallway(QWidget* parent)
 
 	//КНОПКИ
 	toKitchen = new QPushButton(this);
-	toKitchen->setStyleSheet("QPushButton{background-color: green}");
+
 
 	toBedroom = new QPushButton(this);
-	toBedroom->setStyleSheet("QPushButton{background-color: orange}");
+	toBedroom->setStyleSheet("QPushButton { border: none; }");
 
 	//НАСТРЙОКА
 
 	//в спальню
+	toBedroom->setToolTip("В спальню");
 	connect(toBedroom, &QPushButton::clicked, this, [=]() {
 		auto* rooms = (QStackedWidget*)parent;
 		rooms->setCurrentIndex(1);

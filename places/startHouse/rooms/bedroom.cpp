@@ -12,9 +12,11 @@ bedroom::bedroom(QWidget* parent)
 
 	//КНОПКИ
 	toHallway = new QPushButton(this);
-	toHallway->setStyleSheet("QPushButton{background-color: yellow}");
 
 	//НАСТРОЙКА
+	toHallway->setToolTip("В коридор");
+	toHallway->setStyleSheet("QPushButton { border: none; }");
+
 	connect(toHallway, &QPushButton::clicked, this, [=]()
 		{
 			auto* rooms = (QStackedWidget*)parent;
