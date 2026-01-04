@@ -1,6 +1,7 @@
 #pragma once
 #include "core/QtIncludes.h"
 #include "places/places.h"
+#include "PhoneUI.h"
 
 class mainWindow : public QWidget
 {
@@ -8,7 +9,7 @@ class mainWindow : public QWidget
 public:
 	mainWindow(QWidget* parent = nullptr);
 
-private:
-
+protected:
+	
 };
 

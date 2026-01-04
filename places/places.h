@@ -8,6 +8,6 @@ class places : public QWidget
 public:
 	places(QWidget* parent);
 private:
-	QStackedWidget* plasesSt;
+	QStackedWidget* placesSt;
 };
 

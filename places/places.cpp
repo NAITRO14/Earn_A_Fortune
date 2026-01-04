@@ -2,13 +2,20 @@
 
 places::places(QWidget* parent) : QWidget(parent)
 {
-	plasesSt = new QStackedWidget(this);
-	plasesSt->resize(800, 600);
+	placesSt = new QStackedWidget(this);
 
 	//ÌÅÑÒÀ
-	auto* stHouse = new startHouse(plasesSt);
+	auto* stHouse = new startHouse(placesSt);
 
 	//ÏÎÄÊÎÞ×ÅÍÈß
-	plasesSt->addWidget(stHouse);
+	placesSt->addWidget(stHouse);
 
+	//ÍÀÑÒÐÎÉÊÀ
+	setAutoFillBackground(true);
+
+	auto* layout = new QVBoxLayout(this);
+	layout->addWidget(placesSt, 1);
+	layout->setContentsMargins(0, 0, 0, 0);
+
+	setLayout(layout);
 }

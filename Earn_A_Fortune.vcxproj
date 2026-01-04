@@ -103,6 +103,7 @@
   <ItemGroup>
     <ClCompile Include="core\mainWindow.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="PhoneUI.cpp" />
     <ClCompile Include="places\places.cpp" />
     <ClCompile Include="places\startHouse\rooms\stHouse_room1.cpp" />
     <ClCompile Include="places\startHouse\rooms\stHouse_room2.cpp" />
@@ -114,6 +115,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="core\QtIncludes.h" />
+    <QtMoc Include="PhoneUI.h" />
     <QtMoc Include="places\places.h" />
     <QtMoc Include="places\startHouse\rooms\stHouse_room2_near_the_table.h" />
     <QtMoc Include="places\startHouse\rooms\stHouse_room2.h" />

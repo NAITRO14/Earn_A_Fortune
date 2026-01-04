@@ -24,6 +24,9 @@
     <Filter Include="Places\startHouse\rooms">
       <UniqueIdentifier>{12ea6c60-a394-4d39-9082-98ae00a20592}</UniqueIdentifier>
     </Filter>
+    <Filter Include="phone">
+      <UniqueIdentifier>{c203eb04-90bd-489e-a347-96aafe2e07f1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="core\mainWindow.cpp">
@@ -46,6 +49,9 @@
     </ClCompile>
     <ClCompile Include="places\places.cpp">
       <Filter>Places</Filter>
+    </ClCompile>
+    <ClCompile Include="PhoneUI.cpp">
+      <Filter>phone</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -71,6 +77,9 @@
     </QtMoc>
     <QtMoc Include="places\places.h">
       <Filter>Places</Filter>
+    </QtMoc>
+    <QtMoc Include="PhoneUI.h">
+      <Filter>phone</Filter>
     </QtMoc>
   </ItemGroup>
 </Project>
