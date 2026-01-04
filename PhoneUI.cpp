@@ -2,18 +2,20 @@
 
 PhoneUI::PhoneUI(QWidget* parent) : QWidget(parent)
 {
-	auto* z = new QFrame(this);
+	z = new QFrame(this);
 	z->setStyleSheet("QFrame{background-color: magenta}");
-	z->setFixedSize(200, 300);
+	
 
 	auto* l1 = new QVBoxLayout(); //вниз
-	auto* l2 = new QHBoxLayout();//вправо
-	l1->addStretch(1);
-
-	l1->addLayout(l2);
-	l2->addStretch(1);
-	l2->addWidget(z, 0);
+	l1->addWidget(z);
 
 	setLayout(l1);
 	
+}
+
+void PhoneUI::resizeEvent(QResizeEvent* event)
+{
+	z->setFixedSize(width(), height());
+
+	QWidget::resizeEvent(event);
 }

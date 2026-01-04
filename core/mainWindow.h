@@ -10,6 +10,9 @@ public:
 	mainWindow(QWidget* parent = nullptr);
 
 protected:
-	
+	void resizeEvent(QResizeEvent* event) override;
+private:
+	places* placesPtr;
+	PhoneUI* phone;
 };
 

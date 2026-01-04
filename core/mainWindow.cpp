@@ -2,20 +2,28 @@
 
 mainWindow::mainWindow(QWidget* parent) : QWidget(parent)
 {
-	auto* placesPtr = new places(this);
-
-	//auto* phone = new PhoneUI(this);
-
+	placesPtr = new places(this);
+	phone = new PhoneUI(this);
+	
 	auto* mainLayout = new QVBoxLayout(this);
-	//mainLayout->addWidget(phone, 0);
-	mainLayout->addWidget(placesPtr, 0);
-
+	mainLayout->addWidget(placesPtr, 1);
 
 	mainLayout->setContentsMargins(0, 0, 0, 0);
 	setLayout(mainLayout);
-	setMinimumSize(1600, 900);
+	setMinimumSize(800, 450);
 	
 	
+
+
+	
+}
+
+void mainWindow::resizeEvent(QResizeEvent* event)
+{
+	phone->move(width() * 0.79, height() * 0.38);
+	phone->setFixedSize(width() * 0.20, height() * 0.60);
+
+	QWidget::resizeEvent(event);
 }
 
 
