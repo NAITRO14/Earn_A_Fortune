@@ -2,15 +2,15 @@
 
 PhoneUI::PhoneUI(QWidget* parent) : QWidget(parent)
 {
-	z = new QFrame(this);
-	z->setStyleSheet("QFrame{background-color: black; border-radius: 15px;}");
+	black_frame = new QFrame(this);
+	black_frame->setStyleSheet("QFrame{background-color: black; border-radius: 15px;}");
 	
-	n = new QFrame(this);
-	n->setStyleSheet("QFrame{background-color: white;}");
+	screen = new QFrame(this);
+	screen->setStyleSheet("QFrame{background-color: white;}");
 
 	auto* layout = new QVBoxLayout(); //вниз
 	layout->setContentsMargins(0, 0, 0, 0);
-	layout->addWidget(z);
+	layout->addWidget(black_frame);
 
 
 	setLayout(layout);
@@ -19,10 +19,10 @@ PhoneUI::PhoneUI(QWidget* parent) : QWidget(parent)
 
 void PhoneUI::resizeEvent(QResizeEvent* event)
 {
-	z->setFixedSize(width(), height());
+	black_frame->setFixedSize(width(), height());
 
-	n->setFixedSize(width() * 0.80, height() * 0.80);
-	n->move(width() * 0.10, height() * 0.10);
+	screen->move(width() * 0.10, height() * 0.10);
+	screen->setFixedSize(width() * 0.80, height() * 0.80);
 
 	QWidget::resizeEvent(event);
 }

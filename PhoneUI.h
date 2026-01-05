@@ -8,7 +8,7 @@ public:
 protected:
 	void resizeEvent(QResizeEvent* event) override;
 private:
-	QFrame* z;
-	QFrame* n;
+	QFrame* black_frame;
+	QFrame* screen;
 };
 
