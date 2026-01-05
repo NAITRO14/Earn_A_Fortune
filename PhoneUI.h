@@ -9,5 +9,6 @@ protected:
 	void resizeEvent(QResizeEvent* event) override;
 private:
 	QFrame* z;
+	QFrame* n;
 };
 
