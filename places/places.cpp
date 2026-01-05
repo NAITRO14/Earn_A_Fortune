@@ -1,16 +1,16 @@
-#include "places/places.h"
+Ôªø#include "places/places.h"
 
 places::places(QWidget* parent) : QWidget(parent)
 {
 	placesSt = new QStackedWidget(this);
 
-	//Ã≈—“¿
+	//–ú–ï–°–¢–ê
 	auto* stHouse = new startHouse(placesSt);
 
-	//œŒƒ Œﬁ◊≈Õ»ﬂ
+	//–ü–û–î–ö–û–Æ–ß–ï–ù–ò–Ø
 	placesSt->addWidget(stHouse);
 
-	//Õ¿—“–Œ… ¿
+	//–ù–ê–°–¢–†–û–ô–ö–ê
 	setAutoFillBackground(true);
 
 	auto* layout = new QVBoxLayout(this);

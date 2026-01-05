@@ -39,6 +39,7 @@ hallway::hallway(QWidget* parent)
 	connect(toBedroom, &QPushButton::clicked, this, [=]() {
 		auto* rooms = (QStackedWidget*)parent;
 		rooms->setCurrentIndex(1);
+		
 		}
 	);
 

@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 #include "core/QtIncludes.h"
 #include "places/places.h"
 #include "PhoneUI.h"
@@ -14,5 +14,10 @@ protected:
 private:
 	places* placesPtr;
 	PhoneUI* phone;
+
+	QPushButton* PhoneButton;
+	
+
+	
 };
 
