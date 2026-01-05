@@ -1,10 +1,8 @@
 ﻿#include "PhoneUI.h"
 
+
 PhoneUI::PhoneUI(QWidget* parent, QPushButton* callBut) : QWidget(parent)
 {
-	if (!initialize_sounds()) exit(1);
-
-
 	black_frame = new QFrame(this);
 	black_frame->setStyleSheet("QFrame{background-color: black; border-radius: 15px;}");
 	
@@ -19,7 +17,7 @@ PhoneUI::PhoneUI(QWidget* parent, QPushButton* callBut) : QWidget(parent)
 		{
 			hide();
 			callBut->show();
-			make_a_sound();
+			audioManager::getObject().play_getPhone();
 		});
 
 	auto* layout = new QVBoxLayout(); //вниз
@@ -30,29 +28,6 @@ PhoneUI::PhoneUI(QWidget* parent, QPushButton* callBut) : QWidget(parent)
 
 	setLayout(layout);
 	
-}
-
-bool PhoneUI::initialize_sounds()
-{
-	getPhone = Mix_LoadWAV("./sounds/getPhone.wav");
-	if (!getPhone) {
-		printf("Не загрузился getPhone.wav: %s\n", Mix_GetError());
-		return false;
-	}
-	return true;
-}
-
-void PhoneUI::make_a_sound()
-{
-	if (getPhone)
-	{
-		Mix_PlayChannel(-1, getPhone, 0);
-	}
-	else
-	{
-		cerr << "Звук не найден! Ошибка!" << endl;
-		exit(1);
-	}
 }
 
 void PhoneUI::resizeEvent(QResizeEvent* event)

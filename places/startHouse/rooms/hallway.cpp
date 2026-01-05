@@ -40,6 +40,7 @@ hallway::hallway(QWidget* parent)
 		auto* rooms = (QStackedWidget*)parent;
 		rooms->setCurrentIndex(1);
 		
+
 		}
 	);
 

@@ -1,8 +1,6 @@
 ﻿#pragma once
 #include "core/QtIncludes.h"
 
-class startHouse;
-
 class hallway : public QWidget
 {
 	Q_OBJECT

@@ -2,8 +2,6 @@
 
 startHouse::startHouse(QWidget* parent) : QWidget(parent)
 {
-	if (!initialize_sounds()) exit(1);
-
 	rooms = new QStackedWidget(this);
 
 	//КОМНАТЫ
@@ -23,15 +21,7 @@ startHouse::startHouse(QWidget* parent) : QWidget(parent)
 	
 }
 
-bool startHouse::initialize_sounds()
-{
-	goToAnothrRoom = Mix_LoadWAV("./sounds/goToAnotherRoom.wav");
-	if (!goToAnothrRoom) {
-		printf("Не загрузился goToAnothrRoom.wav: %s\n", Mix_GetError());
-		return false;
-	}
-	return true;
-}
+
 
 
 

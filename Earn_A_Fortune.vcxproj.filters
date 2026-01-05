@@ -58,6 +58,9 @@
     <ClInclude Include="core\QtIncludes.h">
       <Filter>Source Files\HEADER</Filter>
     </ClInclude>
+    <ClInclude Include="core\audioManger.h">
+      <Filter>Source Files\HEADER</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="core\mainWindow.h">

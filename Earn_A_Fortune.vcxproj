@@ -114,6 +114,7 @@
     <QtMoc Include="core\mainWindow.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="core\audioManger.h" />
     <ClInclude Include="core\QtIncludes.h" />
     <QtMoc Include="PhoneUI.h" />
     <QtMoc Include="places\places.h" />

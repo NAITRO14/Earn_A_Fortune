@@ -7,8 +7,6 @@ mainWindow::mainWindow(QWidget* parent) : QWidget(parent)
 	PhoneButton = new QPushButton(this);
 	phone = new PhoneUI(this, PhoneButton);
 
-	
-
 	//НАСТРОЙКА
 
 	//СЛОЙ
@@ -33,10 +31,9 @@ mainWindow::mainWindow(QWidget* parent) : QWidget(parent)
 
 			phone->show();
 			PhoneButton->hide();
-			phone->make_a_sound();
+			audioManager::getObject().play_getPhone();
 		});
 
-	
 	
 }
 

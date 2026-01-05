@@ -2,6 +2,8 @@
 #include "core/QtIncludes.h"
 #include "places/places.h"
 #include "PhoneUI.h"
+#include "core/audioManger.h"
+
 
 class mainWindow : public QWidget
 {
@@ -17,7 +19,7 @@ private:
 
 	QPushButton* PhoneButton;
 	
-
+	
 	
 };
 

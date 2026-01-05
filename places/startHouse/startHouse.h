@@ -9,7 +9,6 @@ class startHouse : public QWidget
 	Q_OBJECT
 public:
 	startHouse(QWidget* parent);
-	bool initialize_sounds();
 
 private:
 	QStackedWidget* rooms;
@@ -27,7 +26,7 @@ private:
 		new QPushButton(this),
 	};
 
-	Mix_Chunk* goToAnothrRoom;
+
 	
 	
 };
