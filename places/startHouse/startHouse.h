@@ -9,6 +9,7 @@ class startHouse : public QWidget
 	Q_OBJECT
 public:
 	startHouse(QWidget* parent);
+	QStackedWidget* getRooms();
 
 private:
 	QStackedWidget* rooms;

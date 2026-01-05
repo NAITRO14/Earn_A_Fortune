@@ -116,6 +116,7 @@
   <ItemGroup>
     <ClInclude Include="core\audioManger.h" />
     <ClInclude Include="core\QtIncludes.h" />
+    <ClInclude Include="core\roomManager.h" />
     <QtMoc Include="PhoneUI.h" />
     <QtMoc Include="places\places.h" />
     <QtMoc Include="places\startHouse\rooms\stHouse_room2_near_the_table.h" />

@@ -21,6 +21,11 @@ startHouse::startHouse(QWidget* parent) : QWidget(parent)
 	
 }
 
+QStackedWidget* startHouse::getRooms()
+{
+	return rooms;
+}
+
 
 
 

@@ -9,6 +9,7 @@ places::places(QWidget* parent) : QWidget(parent)
 
 	//ПОДКОЮЧЕНИЯ
 	placesSt->addWidget(stHouse);
+	roomManager::getObject().setCurRooms(stHouse->getRooms());
 
 	//НАСТРОЙКА
 	setAutoFillBackground(true);

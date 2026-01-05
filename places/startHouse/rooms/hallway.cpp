@@ -37,10 +37,7 @@ hallway::hallway(QWidget* parent)
 	//в спальню
 	toBedroom->setToolTip("В спальню");
 	connect(toBedroom, &QPushButton::clicked, this, [=]() {
-		auto* rooms = (QStackedWidget*)parent;
-		rooms->setCurrentIndex(1);
-		
-
+		roomManager::getObject().switch_room(1);
 		}
 	);
 

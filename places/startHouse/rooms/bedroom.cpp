@@ -19,8 +19,7 @@ bedroom::bedroom(QWidget* parent)
 
 	connect(toHallway, &QPushButton::clicked, this, [=]()
 		{
-			auto* rooms = (QStackedWidget*)parent;
-			rooms->setCurrentIndex(0);
+			roomManager::getObject().switch_room(0);
 		});
 
 }
