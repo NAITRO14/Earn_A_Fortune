@@ -14,6 +14,8 @@ private:
 
     QPushButton* toKitchen;
 	QPushButton* toBedroom;
+	QPushButton* toLivingroom;
+	QPushButton* toRestroom;
 
 };
 

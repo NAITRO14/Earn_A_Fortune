@@ -35,9 +35,6 @@
     <ClCompile Include="Main.cpp">
       <Filter>Source Files\CPP</Filter>
     </ClCompile>
-    <ClCompile Include="places\startHouse\rooms\stHouse_room2_near_the_table.cpp">
-      <Filter>Places\startHouse\rooms</Filter>
-    </ClCompile>
     <ClCompile Include="places\places.cpp">
       <Filter>Places</Filter>
     </ClCompile>
@@ -52,6 +49,12 @@
     </ClCompile>
     <ClCompile Include="places\startHouse\startHouse.cpp">
       <Filter>Places\startHouse</Filter>
+    </ClCompile>
+    <ClCompile Include="places\startHouse\rooms\livingroom.cpp">
+      <Filter>Places\startHouse\rooms</Filter>
+    </ClCompile>
+    <ClCompile Include="places\startHouse\rooms\restroom.cpp">
+      <Filter>Places\startHouse\rooms</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -72,9 +75,6 @@
     <QtMoc Include="places\startHouse\startHouse.h">
       <Filter>Places\startHouse</Filter>
     </QtMoc>
-    <QtMoc Include="places\startHouse\rooms\stHouse_room2_near_the_table.h">
-      <Filter>Places\startHouse\rooms</Filter>
-    </QtMoc>
     <QtMoc Include="places\places.h">
       <Filter>Places</Filter>
     </QtMoc>
@@ -85,6 +85,12 @@
       <Filter>Places\startHouse\rooms</Filter>
     </QtMoc>
     <QtMoc Include="places\startHouse\rooms\hallway.h">
+      <Filter>Places\startHouse\rooms</Filter>
+    </QtMoc>
+    <QtMoc Include="places\startHouse\rooms\livingroom.h">
+      <Filter>Places\startHouse\rooms</Filter>
+    </QtMoc>
+    <QtMoc Include="places\startHouse\rooms\restroom.h">
       <Filter>Places\startHouse\rooms</Filter>
     </QtMoc>
   </ItemGroup>

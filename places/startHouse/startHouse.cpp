@@ -5,13 +5,16 @@ startHouse::startHouse(QWidget* parent) : QWidget(parent)
 	rooms = new QStackedWidget(this);
 
 	//КОМНАТЫ
-
 	auto* hallwayPtr = new hallway(rooms);
 	auto* bedroomPrt = new bedroom(rooms);
+	auto* livingroomPtr = new livingroom(rooms);
+	auto* restroomPtr = new restroom(rooms);
 
 	//НАТСРЙОКА
 	rooms->addWidget(hallwayPtr);
 	rooms->addWidget(bedroomPrt);
+	rooms->addWidget(livingroomPtr);
+	rooms->addWidget(restroomPtr);
 
 	QVBoxLayout* layout = new QVBoxLayout(this);
 	layout->addWidget(rooms);

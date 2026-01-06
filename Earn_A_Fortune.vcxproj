@@ -107,7 +107,8 @@
     <ClCompile Include="places\places.cpp" />
     <ClCompile Include="places\startHouse\rooms\hallway.cpp" />
     <ClCompile Include="places\startHouse\rooms\bedroom.cpp" />
-    <ClCompile Include="places\startHouse\rooms\stHouse_room2_near_the_table.cpp" />
+    <ClCompile Include="places\startHouse\rooms\livingroom.cpp" />
+    <ClCompile Include="places\startHouse\rooms\restroom.cpp" />
     <ClCompile Include="places\startHouse\startHouse.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -117,9 +118,10 @@
     <ClInclude Include="core\audioManger.h" />
     <ClInclude Include="core\QtIncludes.h" />
     <ClInclude Include="core\roomManager.h" />
+    <QtMoc Include="places\startHouse\rooms\livingroom.h" />
+    <QtMoc Include="places\startHouse\rooms\restroom.h" />
     <QtMoc Include="PhoneUI.h" />
     <QtMoc Include="places\places.h" />
-    <QtMoc Include="places\startHouse\rooms\stHouse_room2_near_the_table.h" />
     <QtMoc Include="places\startHouse\rooms\bedroom.h" />
     <QtMoc Include="places\startHouse\rooms\hallway.h" />
     <QtMoc Include="places\startHouse\startHouse.h" />

@@ -2,7 +2,8 @@
 #include "core/QtIncludes.h"
 #include "places/startHouse/rooms/hallway.h"
 #include "places/startHouse/rooms/bedroom.h"
-#include "places/startHouse/rooms/stHouse_room2_near_the_table.h"
+#include "places/startHouse/rooms/livingroom.h"
+#include "places/startHouse/rooms/restroom.h"
 
 class startHouse : public QWidget
 {
@@ -12,24 +13,7 @@ public:
 	QStackedWidget* getRooms();
 
 private:
-	QStackedWidget* rooms;
-
-	QVector<QPushButton*> firstRoomBtns = {
-		new QPushButton(this),
-	};
-
-	QVector<QPushButton*> secondRoomBtns = {
-		new QPushButton(this),
-		new QPushButton(this),
-	};
-
-	QVector<QPushButton*> secondRoomNearTableBtns = {
-		new QPushButton(this),
-	};
-
-
-	
-	
+	QStackedWidget* rooms;	
 };
 
 
